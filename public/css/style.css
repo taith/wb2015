@@ -4,7 +4,6 @@ body {
 
 #container {
   background: url(../images/bleed_page.png) 50% 0% repeat-y;
-  min-height: 1%;
 }
 
 #main,#header,#footer {
