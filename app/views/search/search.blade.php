@@ -16,12 +16,12 @@
       <div class="form-group-2">
         <label for="search_id" class="col-sm-2 control-label">Input ID</label>
         <div class="col-sm-3">
-          {{ Form::text('search_id', Input::old('search_id')) }}
+          {{ Form::text('search_id',Input::old('search_id'),array('placeholder' => ' ID')) }}
         </div>
       </div>
       <div class="form-group-3">
         <div class="col-sm-2">
-          <input type="submit" class="btn btn-success" value="Search">
+          <input type="submit" class="btn btn-primary" value="Search">
         </div>
       </div>
     {{ Form::close() }}
@@ -33,7 +33,9 @@
   </div>
   <div class="clear-fix"></div> <!-- fix position -->
 @endif
-@if (Session::has('message'))
+@if (isset($_POST['Search']))
+   <div>aaaaa</div>
+@elseif (Session::has('message'))
   <div class="row">
     <div class="alert alert-danger" role="alert">{{ Session::get('message') }}</div>
   </div>
@@ -44,8 +46,6 @@
       <p>Please select <font color="#8a0000">Search by</font> then type to <font color="#8a0000">ID</font> who you want to search</p>
     </div>
   </div>
-@elseif (isset($_POST['Search']))
-  <div>aaaaa</div>
 @else
   <div class="clear-fix"></div> <!-- fix position -->
   <div class="note-area">

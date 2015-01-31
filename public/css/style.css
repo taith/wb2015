@@ -3,11 +3,13 @@ body {
 }
 
 #container {
-  background: url(../images/bleed_page.png) 50% 0% repeat-y;
+  background: url(../images/bleed_page.png) repeat;
+  width: 80%;
+  margin: auto;
 }
 
 #main,#header,#footer {
-  width: 77%;
+  width: 95%;
   margin: auto;
 }
 
@@ -27,6 +29,7 @@ body {
   color: #fff;
   margin-left: 5px;
   line-height: 42px;
+  font-weight: bold;
 }
 #header .login_conner {
   float: right;
@@ -92,7 +95,7 @@ body {
 #main .search_wraper .form-group-1 .col-sm-3 { margin-top: 7px; }
 #main .search_wraper .form-group-2 .col-sm-2 { line-height: 50px; }
 #main .search_wraper .form-group-3 { line-height: 46px; }
-#main .search_wraper .form-group-2 .col-sm-3 { margin-top: 12px; }
+#main .search_wraper .form-group-2 .col-sm-3 { margin-top: 12px; width: 20%; }
 #main .home-content .chart-2 {
   background: transparent url(../images/chart2.png) no-repeat;
   height: 301px;
@@ -100,6 +103,18 @@ body {
 }
 #main .admin-login .col-md-4 { margin-left: 30%; }
 #main .admin-login .btn { margin-top: 10pt; }
+#main .caculation-content {
+  width: 20%;
+  height: 150pt;
+  border: 1pt solid #d0d0d0;
+  border-radius: 5px;
+  background: #f5f5f5;
+  font-size: 11pt;
+}
+#main .refine-by .row { background: #8a0000; color: #fff; margin-bottom: 10px; }
+#main .refine-by .row h5 { margin-left: 5px; font-weight: bold; }
+#main .refine-by .col-lg-8 { margin-bottom: 10px; }
+
 /* footer */
 #footer {
   height: auto !important;

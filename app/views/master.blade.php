@@ -14,7 +14,7 @@
       <div id="header">
         <div class="wb-da-logo">
           <a class="wb-da-logo" href="" title="The World Bank Analytics Data"></a>
-          <div class="title-logo">Data Analytics</div> <!-- End title logo -->
+          <div class="title-logo">Educational Data Analytics</div> <!-- End title logo -->
           <div class="login_conner">
             <ul>
               @if(Auth::user())
