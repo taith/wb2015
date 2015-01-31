@@ -13,7 +13,7 @@ class ExcelUploadController extends \BaseController {
 
 	public function index()
 	{
-		return View::make('upload');
+		return View::make('upload',array('title' => 'Import Data | HEFA'));
 	}
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>WB</title>
+    <title>{{ $title }}</title>
     {{ HTML::style('css/style.css') }}
     {{ HTML::style('css/bootstrap.min.css') }}
     {{ HTML::style('css/bootstrap-theme.min.css') }}
@@ -33,7 +33,7 @@
             <li><a href="calculation">Calculation</a></li>
             <li><a href="visualization">Visualization</a></li>
             <li><a href="about">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </nav> <!-- End navigator -->
       </div> <!-- End header -->

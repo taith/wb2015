@@ -5,7 +5,7 @@ class SearchController extends BaseController {
   protected $input;
   
   public function index() {
-    return View::make('search.search');
+    return View::make('search.search',array('title' => 'Search | HEFA'));
   }
   
   public function store() {

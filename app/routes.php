@@ -12,9 +12,7 @@
 */
 
 Route::get('/', function() {
-  $title = "Wellcome to the website";
-	return View::make('home.index')
-    ->with('title',$title);
+	return View::make('home.index',array('title' => 'Home | HEFA'));
 });
 
 
@@ -27,29 +25,26 @@ Route::get('/', function() {
 Route::resource('upload', 'ExcelUploadController');
 
 Route::get('about',function(){
-  $title = "About us";
-    return View::make('home.about')
-      ->with('title',$title);
+    return View::make('home.about',array('title' => 'About | HEFA'));
+});
+
+Route::get('contact',function(){
+    return View::make('home.contact',array('title' => 'Contact | HEFA'));
 });
 
 Route::resource('search', 'SearchController');
 
 Route::get('calculation', function(){
-  $title = "Analysis data";
-  return View::make('main.analysis')
-    ->with('title',$title);
+  return View::make('main.analysis',array('title' => 'Caculation | HEFA'));
 });
 
 Route::get('visualization', function(){
-  $title = "Analysis data";
-  return View::make('main.visualization')
-    ->with('title',$title);
+  return View::make('main.visualization',array('title' => 'Visualization | HEFA'));
 });
 
 Route::get('login',function(){
   $title = "Login";
-  return View::make('user.login')
-    ->with('title',$title);
+  return View::make('user.login',array('title' => 'Login | HEFA'));
 });
 
 Route::get('delete-{table}', function($table) {
